@@ -1,0 +1,406 @@
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1e3c72), to(#2a5298));
+  background: linear-gradient(to top, #1e3c72, #2a5298);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.login-register-bloc {
+  margin: 10% auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.login-register-bloc .announcement-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 992px) {
+  .login-register-bloc {
+    -ms-grid-columns: 0% 100%;
+        grid-template-columns: 0% 100%;
+  }
+  .login-register-bloc .announcement-img-wrapper img {
+    width: 30%;
+    height: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+.login-register-bloc .connect-register_component {
+  position: relative;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background: white;
+  z-index: 1;
+}
+
+.login-register-bloc .connect-register_component .connect-component, .login-register-bloc .connect-register_component .register-component {
+  text-align: center;
+}
+
+.login-register-bloc .connect-register_component .connect-component .particle-btn, .login-register-bloc .connect-register_component .register-component .particle-btn {
+  display: block;
+  background: rgba(36, 59, 85, 0.568);
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  width: 40%;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.login-register-bloc .connect-register_component .connect-component .particle-btn:hover, .login-register-bloc .connect-register_component .register-component .particle-btn:hover {
+  background: #243b55;
+}
+
+@media screen and (max-width: 400px) {
+  .login-register-bloc .connect-register_component .connect-component .particle-btn, .login-register-bloc .connect-register_component .register-component .particle-btn {
+    width: 50%;
+  }
+}
+
+.login-register-bloc .connect-register_component .connect-component input, .login-register-bloc .connect-register_component .register-component input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+
+.login-register-bloc .connect-register_component .connect-component input:hover, .login-register-bloc .connect-register_component .register-component input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.login-register-bloc .connect-register_component .connect-component input:focus, .login-register-bloc .connect-register_component .register-component input:focus {
+  background-color: white;
+  width: 300px;
+  color: black;
+}
+
+.login-register-bloc .connect-register_component .register-component {
+  text-align: center;
+}
+
+.login-register-bloc .connect-register_component .animation-area {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2c78ff), to(#5594ff));
+  background: linear-gradient(to top, #2c78ff, #5594ff);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-animation: animate_rectangular_bg 20s linear infinite;
+          animation: animate_rectangular_bg 20s linear infinite;
+  bottom: -150px;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.login-register-bloc .connect-register_component .animation-area .box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+@-webkit-keyframes animate_rectangular_bg {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-800px) rotate(360deg);
+            transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animate_rectangular_bg {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-800px) rotate(360deg);
+            transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.login-register-bloc .btn-switch_CR {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  margin: auto;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 500px) {
+  .login-register-bloc .btn-switch_CR {
+    width: 80%;
+  }
+}
+
+.login-register-bloc .btn-switch_CR:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-register-bloc .btn-switch_CR .login {
+  position: relative;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-register-bloc .btn-switch_CR .login::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#243B55), to(#141E30));
+  background: linear-gradient(to right, #243B55, #141E30);
+  z-index: -1;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.login-register-bloc .btn-switch_CR .login::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 100%;
+  width: 0px;
+  background: #03c5cc;
+  z-index: 0;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.login-register-bloc .btn-switch_CR .login:hover::before, .login-register-bloc .btn-switch_CR .login.actif-btn::before {
+  height: 100%;
+  width: 18px;
+  -webkit-transform: translateY(0) skew(-20deg);
+          transform: translateY(0) skew(-20deg);
+}
+
+.login-register-bloc .btn-switch_CR .register {
+  position: relative;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-register-bloc .btn-switch_CR .register::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#0575e6), to(#021b79));
+  background: linear-gradient(to right, #0575e6, #021b79);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -1;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.login-register-bloc .btn-switch_CR .register::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 0px;
+  background: #03c5cc;
+  z-index: 0;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.login-register-bloc .btn-switch_CR .register:hover::before, .login-register-bloc .btn-switch_CR .register.actif-btn::before {
+  height: 100%;
+  width: 18px;
+  -webkit-transform: translateY(0) skew(-20deg);
+          transform: translateY(0) skew(-20deg);
+}
+
+.login-register-bloc .bloc-switch_wrapper {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+}
+
+.login-register-bloc .bloc-switch_wrapper .bloc-switch_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[2];
+      grid-template-columns: repeat(2, 100%);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.login-register-bloc .bloc-switch_wrapper .bloc-switch_container.login-actif {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.login-register-bloc .bloc-switch_wrapper .bloc-switch_container.register-actif {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.login-register-bloc .bloc-switch_wrapper .connect-component, .login-register-bloc .bloc-switch_wrapper .register-component {
+  width: 100%;
+  height: 100%;
+}
+
+*::-webkit-input-placeholder {
+  color: white;
+}
+
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+
+*::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+*::placeholder {
+  /* modern browser */
+  color: white;
+}
+/*# sourceMappingURL=login_register.css.map */
